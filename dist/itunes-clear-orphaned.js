@@ -1,3 +1,4 @@
+#!/usr/bin/env -S osascript -l JavaScript
 "use strict";
 ObjC["import"]("AppKit");
 ObjC["import"]("stdlib");

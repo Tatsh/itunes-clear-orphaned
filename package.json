@@ -29,8 +29,8 @@
     "url": "git+ssh://git@github.com/Tatsh/itunes-clear-orphaned.git"
   },
   "scripts": {
-    "build": "tsc",
-    "run": "osascript -l JavaScript ./dist/itunes-clear-orphaned.js"
+    "build": "tsc && chmod +x ./dist/itunes-clear-orphaned.js",
+    "run": "./dist/itunes-clear-orphaned.js"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

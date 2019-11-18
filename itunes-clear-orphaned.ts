@@ -1,3 +1,4 @@
+#!/usr/bin/env -S osascript -l JavaScript
 interface $ {
   exit(n: number): never;
   NSWorkspace: {
