@@ -1,0 +1,36 @@
+{
+  "author": {
+    "email": "bugs@udva.re",
+    "name": "Andrew Udvare"
+  },
+  "bin": {
+    "itunes-clear-oprhaned": "./dist/itunes-clear-orphaned.js"
+  },
+  "bugs": {
+    "email": "bugs@udva.re",
+    "url": "https://github.com/Tatsh/itunes-clear-orphaned/issues"
+  },
+  "description": "Remove orphaned tracks from iTunes/Music.app.",
+  "homepage": "https://github.com/Tatsh/itunes-clear-orphaned",
+  "keywords": [
+    "applescript",
+    "itunes",
+    "jxa",
+    "music",
+    "osascript"
+  ],
+  "license": "MIT",
+  "name": "itunes-clear-orphaned",
+  "os": [
+    "darwin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tatsh/itunes-clear-orphaned.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "run": "osascript -l JavaScript ./dist/itunes-clear-orphaned.js"
+  },
+  "version": "0.0.1"
+}
