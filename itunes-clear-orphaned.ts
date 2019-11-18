@@ -52,8 +52,9 @@ const appIsRunning = (xs: string) => {
 
 const main = () => {
   const finder = Application("Finder");
-  const iTunesApp = Application("Music");
-  const library = iTunesApp.sources().find(x => x.name() === "Library");
+  const library = Application("Music")
+    .sources()
+    .find(x => x.name() === "Library");
 
   if (!library) {
     return 1;
