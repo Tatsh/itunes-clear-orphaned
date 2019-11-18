@@ -1,7 +1,7 @@
 #!/usr/bin/env -S osascript -l JavaScript
 "use strict";
-ObjC["import"]("AppKit");
-ObjC["import"]("stdlib");
+ObjC.import("AppKit");
+ObjC.import("stdlib");
 const appIsRunning = (xs) => {
     for (const app of ObjC.unwrap($.NSWorkspace.sharedWorkspace.runningApplications)) {
         if (app.bundleIdentifier.isEqualToString &&

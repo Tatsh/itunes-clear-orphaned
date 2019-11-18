@@ -25,7 +25,7 @@ interface Application {
 }
 
 interface ObjC {
-  ["import"]: (x: string) => void;
+  import(x: string): void;
   unwrap<T>(x: T): T;
 }
 
@@ -33,8 +33,8 @@ declare var $: $;
 declare var Application: (x: string | number) => Application;
 declare var ObjC: ObjC;
 
-ObjC["import"]("AppKit");
-ObjC["import"]("stdlib");
+ObjC.import("AppKit");
+ObjC.import("stdlib");
 
 const appIsRunning = (xs: string) => {
   for (const app of ObjC.unwrap(
