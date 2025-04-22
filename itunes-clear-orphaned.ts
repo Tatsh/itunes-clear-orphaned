@@ -33,17 +33,12 @@ declare var $: $;
 declare var Application: (x: string | number) => Application;
 declare var ObjC: ObjC;
 
-ObjC.import("AppKit");
-ObjC.import("stdlib");
+ObjC.import('AppKit');
+ObjC.import('stdlib');
 
 const appIsRunning = (xs: string) => {
-  for (const app of ObjC.unwrap(
-    $.NSWorkspace.sharedWorkspace.runningApplications
-  )) {
-    if (
-      app.bundleIdentifier.isEqualToString &&
-      app.bundleIdentifier.isEqualToString(xs)
-    ) {
+  for (const app of ObjC.unwrap($.NSWorkspace.sharedWorkspace.runningApplications)) {
+    if (app.bundleIdentifier.isEqualToString && app.bundleIdentifier.isEqualToString(xs)) {
       return true;
     }
   }
@@ -51,28 +46,26 @@ const appIsRunning = (xs: string) => {
 };
 
 const main = () => {
-  const finder = Application("Finder");
-  const library = Application("Music")
+  const finder = Application('Finder');
+  const library = Application('Music')
     .sources()
-    .find(x => x.name() === "Library");
-
+    .find((x) => x.name() === 'Library');
   if (!library) {
     return 1;
   }
-
+  let name: string | undefined = undefined;
   for (const track of library.tracks()) {
     try {
-      track.name();
+      name = track.name();
     } catch (e) {
       continue;
     }
     const loc = track.location();
-    if (!loc || !finder.exists(loc)) {
+    if ((!loc || !finder.exists(loc)) && typeof name !== 'undefined') {
       console.log(`Removing ${name}`);
       track.delete();
     }
   }
-
   return 0;
 };
 
