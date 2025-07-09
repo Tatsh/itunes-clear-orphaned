@@ -19,7 +19,7 @@ defaults {
     },
   ],
   project_name: 'itunes-clear-orphaned',
-  version: '0.0.4',
+  version: '0.0.5',
   description: 'Utility to remove orphaned files from iTunes/Music library.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   copilot: {
