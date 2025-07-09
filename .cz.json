@@ -1,7 +1,13 @@
 {
   "commitizen": {
     "tag_format": "v$version",
-    "version_files": [".wiswa.jsonnet", "CITATION.cff", "README.md", "package.json"],
+    "version_files": [
+      ".wiswa.jsonnet",
+      "CITATION.cff",
+      "README.md",
+      "man/itunes-clear-orphaned.1",
+      "package.json"
+    ],
     "version_provider": "npm",
     "version_scheme": "semver"
   }

@@ -61,7 +61,13 @@
     "webpack-shebang-plugin": "^1.1.8",
     "yarn-audit-fix": "^10.1.1"
   },
-  "files": ["LICENSE.txt", "README.md", "dist/index.js", "dist/index.js.map"],
+  "files": [
+    "LICENSE.txt",
+    "README.md",
+    "man/itunes-clear-orphaned.1",
+    "dist/index.js",
+    "dist/index.js.map"
+  ],
   "homepage": "https://tatsh.github.io/itunes-clear-orphaned/",
   "keywords": ["applescript", "facetime", "jxa", "macos", "notifications", "typescript"],
   "license": "MIT",

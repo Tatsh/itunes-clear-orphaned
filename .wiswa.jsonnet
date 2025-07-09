@@ -1,8 +1,11 @@
-(import 'defaults.libjsonnet') + {
+local defaults = import 'defaults.libjsonnet';
+
+defaults {
   local top = self,
   // General settings
   project_type: 'typescript',
   keep_dist: true,
+  want_man: true,
 
   // Shared
   github_username: 'Tatsh',
