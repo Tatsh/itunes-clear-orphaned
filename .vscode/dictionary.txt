@@ -6,6 +6,7 @@ coverallsapp
 docstrings
 esbenp
 facetime
+foxundermoon
 htmlcov
 jsonnet
 jsonschema
@@ -13,6 +14,7 @@ libjsonnet
 osascript
 pycache
 schemafile
+shellformat
 tatsh
 udvare
 vars
