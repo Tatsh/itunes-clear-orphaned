@@ -7,12 +7,11 @@ docstrings
 esbenp
 facetime
 foxundermoon
-htmlcov
 jsonnet
 jsonschema
+libera
 libjsonnet
 osascript
-pycache
 schemafile
 shellformat
 tatsh

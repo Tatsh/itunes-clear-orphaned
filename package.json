@@ -37,30 +37,29 @@
   },
   "description": "Utility to remove orphaned files from iTunes/Music library.",
   "devDependencies": {
-    "@eslint/js": "^9.39.0",
+    "@eslint/js": "^9.39.2",
     "@prettier/plugin-xml": "^3.4.2",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.0.2",
-    "cspell": "^9.2.1",
-    "eslint": "^9.39.0",
+    "@types/node": "^25.0.3",
+    "cspell": "^9.4.0",
+    "eslint": "^9.39.2",
     "jest": "^30.2.0",
     "jxa-lib": "^0.1.9",
-    "jxa-types": "^0.0.6",
+    "jxa-types": "^0.0.8",
     "markdownlint-cli2": "^0.20.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "prettier-plugin-ini": "^1.3.0",
     "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-toml": "^2.0.6",
-    "ts-jest": "^29.4.5",
+    "ts-jest": "^29.4.6",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.28.14",
+    "typedoc": "^0.28.15",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.3",
-    "webpack": "^5.102.1",
+    "typescript-eslint": "^8.50.0",
+    "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
-    "webpack-shebang-plugin": "^1.1.8",
-    "yarn-audit-fix": "^10.1.1"
+    "webpack-shebang-plugin": "^1.1.8"
   },
   "files": [
     "LICENSE.txt",
@@ -75,6 +74,9 @@
   "main": "dist/index.js",
   "markdownlint-cli2": {
     "config": {
+      "MD024": {
+        "siblings_only": true
+      },
       "MD033": {
         "allowed_elements": ["kbd"]
       },
@@ -87,7 +89,7 @@
     }
   },
   "name": "itunes-clear-orphaned",
-  "packageManager": "yarn@4.10.3",
+  "packageManager": "yarn@4.12.0",
   "prettier": {
     "endOfLine": "lf",
     "iniSpaceAroundEquals": true,
