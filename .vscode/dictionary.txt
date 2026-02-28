@@ -10,6 +10,7 @@ jsonnet
 jsonschema
 libera
 libjsonnet
+libsonnet
 osascript
 schemafile
 shellformat
