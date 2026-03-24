@@ -15,6 +15,8 @@ local utils = import 'utils.libjsonnet';
   package_json+: {
     bin: './dist/index.js',
     devDependencies+: {
+      // Pin to 5.x until ts-jest and typescript-eslint support TypeScript 6
+      typescript: '^5.9.3',
       'globals': utils.latestNpmPackageVersionCaret('globals'),
       'jxa-lib': utils.latestNpmPackageVersionCaret('jxa-lib'),
       'jxa-types': utils.latestNpmPackageVersionCaret('jxa-types'),
