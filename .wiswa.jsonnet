@@ -1,6 +1,7 @@
 local utils = import 'utils.libjsonnet';
 
 {
+  uses_user_defaults: true,
   project_type: 'typescript',
   keep_dist: true,
   want_man: true,
@@ -8,9 +9,6 @@ local utils = import 'utils.libjsonnet';
   version: '0.0.5',
   description: 'Utility to remove orphaned files from iTunes/Music library.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
-  copilot+: {
-    intro: 'itunes-clear-orphaned is a script to remove orphaned files from the library.',
-  },
   // TypeScript only
   package_json+: {
     bin: './dist/index.js',
