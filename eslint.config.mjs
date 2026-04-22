@@ -8,18 +8,20 @@ export default tseslint.config(
   { files: ['**/*.js'], languageOptions: { sourceType: 'commonjs' } },
   { files: ['**/*.{js,mjs,cjs,ts,mts,cts}'], languageOptions: { globals: globals.browser } },
   ...tseslint.configs.recommended,
-  {
-    rules: {
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-        },
-      ],
+  ...[
+    {
+      rules: {
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+            caughtErrorsIgnorePattern: '^_',
+            destructuredArrayIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+          },
+        ],
+      },
     },
-  },
-  { rules: { '@typescript-eslint/no-unused-expressions': 'off' } },
+    { rules: { '@typescript-eslint/no-unused-expressions': 'off' } },
+  ],
 );

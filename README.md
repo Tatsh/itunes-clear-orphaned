@@ -10,7 +10,7 @@
 [![Tests](https://github.com/Tatsh/itunes-clear-orphaned/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/itunes-clear-orphaned/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Tatsh/itunes-clear-orphaned/badge.svg?branch=master)](https://coveralls.io/github/Tatsh/itunes-clear-orphaned?branch=master)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)
-[![GitHub Pages](https://github.com/Tatsh/itunes-clear-orphaned/actions/workflows/pages.yml/badge.svg)](https://tatsh.github.io/itunes-clear-orphaned/)
+[![pages-build-deployment](https://github.com/Tatsh/itunes-clear-orphaned/actions/workflows/pages/pages-build-deployment/badge.svg)](https://tatsh.github.io/itunes-clear-orphaned/)
 [![Stargazers](https://img.shields.io/github/stars/Tatsh/itunes-clear-orphaned?logo=github&style=flat)](https://github.com/Tatsh/itunes-clear-orphaned/stargazers)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Prettier](https://img.shields.io/badge/Prettier-black?logo=prettier)](https://prettier.io/)
