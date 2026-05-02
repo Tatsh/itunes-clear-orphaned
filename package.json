@@ -1,8 +1,8 @@
 {
   "_wiswa": {
     "commandLine": "wiswa",
-    "lastRun": "2026-05-02T18:54:00Z",
-    "version": "4d2163f-dirty"
+    "lastRun": "2026-05-02T20:18:52Z",
+    "version": "5a69ecf"
   },
   "bin": "./dist/index.js",
   "contributors": ["Andrew Udvare <audvare@gmail.com>"],

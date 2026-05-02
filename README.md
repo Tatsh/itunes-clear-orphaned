@@ -2,6 +2,8 @@
 
 <!-- WISWA-GENERATED-README:START -->
 
+[![NPM Version](https://img.shields.io/npm/v/itunes-clear-orphaned)](https://www.npmjs.com/package/itunes-clear-orphaned)
+[![NPM Downloads](https://img.shields.io/npm/dm/itunes-clear-orphaned)](https://www.npmjs.com/package/itunes-clear-orphaned)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/itunes-clear-orphaned)](https://github.com/Tatsh/itunes-clear-orphaned/tags)
 [![License](https://img.shields.io/github/license/Tatsh/itunes-clear-orphaned)](https://github.com/Tatsh/itunes-clear-orphaned/blob/master/LICENSE.txt)
 [![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/itunes-clear-orphaned/v0.0.5/master)](https://github.com/Tatsh/itunes-clear-orphaned/compare/v0.0.5...master)
