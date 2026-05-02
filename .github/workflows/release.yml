@@ -30,7 +30,7 @@ jobs:
         run: |
           tag="$HEAD_BRANCH"
           sha="$HEAD_SHA"
-          required_workflows=('Publish')
+          required_workflows=('Publish' 'Upload dist')
           optional_workflows=('Prettier' 'QA' 'Spelling' 'Tests' 'markdownlint')
           all_success=true
           process_workflow() {
@@ -146,6 +146,7 @@ name: 'Release'
       - 'QA'
       - 'Spelling'
       - 'Tests'
+      - 'Upload dist'
       - 'markdownlint'
 permissions:
   actions: 'write'

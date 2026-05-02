@@ -9,6 +9,11 @@ local utils = import 'utils.libjsonnet';
   version: '0.0.5',
   description: 'Utility to remove orphaned files from iTunes/Music library.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
+  github+: {
+    workflows+: {
+      release_gate_workflows+: ['Upload dist'],
+    },
+  },
   // TypeScript only
   package_json+: {
     bin: './dist/index.js',
