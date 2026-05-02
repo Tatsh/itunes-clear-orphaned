@@ -19,10 +19,12 @@ jobs:
         run: 'yarn'
       - name: 'Build'
         run: 'yarn tsc'
+      - name: 'Stage release asset'
+        run: 'cp dist/index.js itunes-clear-orphaned'
       - uses: 'softprops/action-gh-release@v3.0.0'
         with:
           draft: true
-          files: 'dist/index.js'
+          files: 'itunes-clear-orphaned'
 name: 'Upload dist'
 'on':
   push:
