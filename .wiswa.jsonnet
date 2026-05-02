@@ -6,7 +6,7 @@ local utils = import 'utils.libjsonnet';
   keep_dist: true,
   want_man: true,
   project_name: 'itunes-clear-orphaned',
-  version: '0.0.6',
+  version: '0.0.7',
   description: 'Utility to remove orphaned files from iTunes/Music library.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   github+: {
