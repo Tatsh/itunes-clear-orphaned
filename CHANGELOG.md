@@ -9,9 +9,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.0.6] - 2026-05-02
+
+### Added
+
+- Attach the built CLI as a downloadable `itunes-clear-orphaned` asset on each GitHub Release.
+
 ## [0.0.3]
 
 First tagged version.
 
-[unreleased]: https://github.com/Tatsh/itunes-clear-orphaned/compare/v0.0.5...HEAD
+[unreleased]: https://github.com/Tatsh/itunes-clear-orphaned/compare/v0.0.6...HEAD
+[0.0.6]: https://github.com/Tatsh/itunes-clear-orphaned/compare/v0.0.5...v0.0.6
 [0.0.3]: https://github.com/Tatsh/itunes-clear-orphaned/releases/tag/v0.0.3

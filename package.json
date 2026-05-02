@@ -134,5 +134,5 @@
     "qa": "eslint && yarn check-spelling && yarn check-formatting",
     "test": "jest"
   },
-  "version": "0.0.5"
+  "version": "0.0.6"
 }
