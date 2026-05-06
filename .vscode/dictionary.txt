@@ -35,6 +35,7 @@ udvare
 vars
 vendored
 venv
+vitest
 wiswa
 wiswa's
 yarnrc
