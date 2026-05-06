@@ -11,6 +11,9 @@ local utils = import 'utils.libjsonnet';
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   github+: {
     workflows+: {
+      publish_npm_any+: {
+        build_command: 'yarn webpack',
+      },
       release_gate_workflows+: ['Upload dist'],
     },
   },

@@ -21,6 +21,7 @@ mypy
 npmjs
 oneline
 osascript
+preapproved
 pylock
 regen
 ripgreprc
