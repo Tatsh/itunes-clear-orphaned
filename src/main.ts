@@ -2,7 +2,7 @@ import { ItunesHelper } from 'jxa-lib';
 
 export default function (): number {
   const finder = Application('Finder');
-  const helper = new ItunesHelper(Application('Music') as ItunesApplication);
+  const helper = new ItunesHelper(Application('Music'));
   let name: string | undefined;
   for (const track of helper.fileTracks) {
     try {

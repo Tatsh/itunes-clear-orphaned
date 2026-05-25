@@ -2970,7 +2970,7 @@ __metadata:
     eslint: "npm:^10.2.1"
     globals: "npm:^17.5.0"
     jxa-lib: "npm:^0.1.9"
-    jxa-types: "npm:^0.0.11"
+    jxa-types: "npm:^0.0.12"
     markdownlint-cli2: "npm:^0.22.1"
     prettier: "npm:^3.8.3"
     prettier-plugin-ini: "npm:^1.3.0"
@@ -3070,10 +3070,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jxa-types@npm:^0.0.11":
-  version: 0.0.11
-  resolution: "jxa-types@npm:0.0.11"
-  checksum: 10c0/e700bda5c4fc6e428c1cc81d266fea57bdf44b57a22867ebf8688e8787fb40f76e2c5b0b783f7005df8442b450cfe3b08fd111512750888117543730a6dcebb0
+"jxa-types@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "jxa-types@npm:0.0.12"
+  checksum: 10c0/dcbd149d6a2118d9fb95b7143c12109a5d2b73af5ebc963916ff02f0784ad519a22f741dfb59e9853e04c49bf08860319d5a2ceffd18fb2932ece9f1c29e4321
   languageName: node
   linkType: hard
 
