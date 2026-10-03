@@ -4,13 +4,19 @@ jobs:
       contents: 'write'
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v7.0.1'
+      - uses: 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
+        with:
+          persist-credentials: false
       - name: 'Stage release asset'
         run: 'cp dist/index.js itunes-clear-orphaned'
-      - uses: 'softprops/action-gh-release@v3.0.3'
-        with:
-          draft: true
-          files: 'itunes-clear-orphaned'
+      - env:
+          GH_REPO: '${{ github.repository }}'
+          GH_TOKEN: '${{ github.token }}'
+        name: 'Upload itunes-clear-orphaned to draft release'
+        run: |
+          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 ||
+            gh release create "$GITHUB_REF_NAME" --draft --notes ''
+          gh release upload "$GITHUB_REF_NAME" itunes-clear-orphaned --clobber
 name: 'Upload dist'
 'on':
   push:
